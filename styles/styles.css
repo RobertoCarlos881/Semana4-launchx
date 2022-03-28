@@ -1,0 +1,290 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+    background-image: url('../img/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pokedex {
+  background-image: url('../img/pokedex2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.parteSuperior {
+  width: 90%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokedexSup {
+  color: rgb(0, 0, 0);
+  background-color: red;
+  border-radius: 30px 30px 30px 0px;
+  width: 60%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+}
+
+.pokedexSupPantalla {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: rgb(0, 77, 107);
+  border-radius: 10px;
+  border-color: black;
+  border-style: double;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedexSupPantalla img {
+  position: relative;
+  width: 50%;
+  height: 200px;
+}
+
+.pokedexSupPantallaAtras {
+  position: relative;
+  width: 70%;
+  height: 240px;
+  background-color: rgb(58, 58, 58);
+  border-radius: 10px;
+  border-color: black;
+  border-style: double;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.pantalla {
+  padding: 150px 110px;
+  width: 180px;
+  height: 200px;
+}
+
+.pantalla img {
+  width: 180px;
+  height: 200px;
+}
+
+.stats {
+  padding: 60px;
+}
+
+.botones {
+  left: 600px;
+}
+
+.campo {
+  left: 0px;
+  padding: 400px 10px;
+}
+
+.parteInferior {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.pokedexInfAtras {
+  color: rgb(0, 0, 0);
+  background-color: red;
+  border-radius: 0px 30px 30px 0px;
+  border-style: solid;
+  width: 60%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pokedexInfAtras label {
+  color: rgb(253, 253, 253);
+}
+
+.pokedexInfLeft {
+  color: rgb(0, 0, 0);
+  background-color: rgb(58, 58, 58);
+  border-radius: 100% 0px 0px 100%;
+  width: 30%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+  border-style: solid;
+}
+
+.pokedexInfLeft .evolution {
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 58, 58);
+
+  width: 20%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.pokedexInfLeft .evolution span {
+  color: rgb(0, 77, 107);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pokedexInfLeft .evolution img {
+    width: 100%;
+}
+
+.pokedexInfRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  background-color: rgb(58, 58, 58);
+  border-radius: 0px 100px 100px 0px;
+  width: 15%;
+  height: 200px;
+  font-size: 20px;
+  border-style: solid;
+}
+
+.pokedexInfRight label {
+    color: rgb(255, 255, 255);
+}
+
+.datosInferior {
+  width: 70%;
+  height: 250px;
+  background-color: rgb(0, 77, 107);
+  border-radius: 10px;
+  border-color: black;
+  border-style: dotted;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+
+}
+
+.datosInferior .stats {
+  width: 20%;
+  height: 50%;
+  background-color: rgb(0, 77, 107);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.datosInferior .otro {
+  padding: 30px;
+  width: 70%;
+  height: 70%;
+  background-color: rgb(0, 77, 107);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.datosInferior .otro .moves {
+    width: 90%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+.datosInferior label {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.datosInferior span {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.datosInferior li {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.boton {
+  position: relative;
+  background-color: rgb(46, 161, 0);
+  border-radius: 50%;
+  border-color: rgb(58, 58, 58);
+  border-style: dashed;
+  width: 50%;
+  height: 80px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  position: relative;
+  background-color: rgb(192, 125, 0);
+  border-radius: 50%;
+  width: 50%;
+  height: 80px;
+  box-shadow: 10px;
+}
+
+.type {
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 20%;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+footer {
+    margin-top:50px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(24, 24, 24, 0.377);
+    height: 100px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}

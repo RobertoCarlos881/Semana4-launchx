@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="any">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <section class="container">
+        <section class="parteSuperior">
+            <div class="pokedexSup">
+                <div class="pokedexSupPantallaAtras">
+                    <div class="pokedexSupPantalla">
+                        <img src="./img/pokeball.png" alt="Pokemonß" id="pokeImg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="parteInferior">
+            <div class="pokedexInfLeft">
+                <div class="evolution">
+                    <label>Evoluciones</label>
+                    <img src="./img/pokeball.png" alt="Pokemonß" id="pokeEvo1">
+                    <span>↓</span>
+                    <img src="./img/pokeball.png" alt="Pokemonß" id="pokeEvo2">
+                    <span>↓</span>
+                    <img src="./img/pokeball.png" alt="Pokemonß" id="pokeEvo3">
+                </div>
+            </div>
+            <div class="pokedexInfAtras">
+                <label>Pokemon:</label>
+                <input type="text" placeholder="pikachu" id="pokeName" name="pokeName"><br>
+                <div class="datosInferior">
+                    <div class="stats">
+                        <span>Estadisticas:</span>
+                        <label>HP:
+                            <label id="hp">0</label>
+                        </label>
+                        <label>ATK:
+                            <label id="atk">0</label>
+                        </label>
+                        <label>DEF:
+                            <label id="def">0</label>
+                        </label>
+                        <label>ATK E:
+                            <label id="atke">0</label>
+                        </label>
+                        <label>DEF E:
+                            <label id="defe">0</label>
+                        </label>
+                        <label>SPEED:
+                            <label id="speed">0</label>
+                        </label>
+                        <span>Tipo:</span>
+                        <label class="type" id="type1"></label>
+                        <label class="type" id="type2"></label>
+                    </div>
+                    <div class="otro">
+                        <span>Movimientos</span>
+                        <ul class="moves" id="moves">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pokedexInfRight">
+                <button class="boton" onclick="fetchPokemon()"></button>
+                <label>Buscar</label>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <span>Desarrollado por Cortes Ramirez Roberto Carlos</span>
+    </footer>
+    <script src="./src/pokedex.js"></script>
+</body>
+</html>
